@@ -13,7 +13,11 @@ import java.util.List;
 @SpringBootApplication
 public class ThymeleafApplication {
 
+
+
 	@RequestMapping("/")
+
+//	This is modeling the object.  This object will be passed on to the HTML file in the templates folder
 	public String home(Model model) {
 		model.addAttribute("author","Jethrow");
 		model.addAttribute("height","6'2");

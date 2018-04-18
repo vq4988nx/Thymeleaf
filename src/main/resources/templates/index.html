@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <title>Hello Templates</title>
 
+    <!--link to the css file in the css folder-->
     <link rel="stylesheet" href="../css/style.css" type = "text/css">
 </head>
 <body>
 
 <h1>Hello Spring!</h1>
 
+<!--Inserting the object property references to the html page-->
 <p>This site was built by <span th:text="${author}"></span></p>
 <p>Height is <span th:text="${height}"></span></p>
 
+<!--Inserting the object property references to the html page-->
 <h2>Favorite Foods</h2>
 <ul>
     <li th:each="food : ${favoriteFood}" th:text="${food}"></li>
@@ -21,6 +24,7 @@
 
 <h2>Sloth here</h2>
 
+<!--Image file is located in the image folder-->
 <img src="../img/sloth.jpg" height="600" width="450">
 
 </body>
